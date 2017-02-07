@@ -9,22 +9,33 @@ def func(arg):
  
     if arg == '1':
         f = lambda x:x
+        print "Usage: yval is filled from lambda function, cmd argument = ", arg
         yval = f(xval)
         #print yval
+        plt.plot(xval, yval)
+        plt.show()
     elif arg == '2':
+        print "Usage: yval is filled from sine function, cmd argument = ", arg
         yval = np.sin(xval) 
         #print yval
+        plt.plot(xval, yval)
+        plt.show()
     elif arg == '3':
+        print "Usage: yval is filled from cosine function, cmd argument = ", arg
         yval = np.cos(xval)
         #print yval
+        plt.plot(xval, yval)
+        plt.show()
     elif arg == '4':
+        print "Usage: yval is filled from tan function, cmd argument = ", arg
         yval = np.tan(xval)
         #print yval
+        plt.plot(xval, yval)
+        plt.show()
+
     else:
-        print 'yval would be populated by a diff function'
+        print "Usage: yval would be populated by a diff function, cmd argument =",arg
 	
-    plt.plot(xval, yval)
-    plt.show()
 
 
 test = func(cmd)
