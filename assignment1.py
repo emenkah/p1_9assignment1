@@ -9,13 +9,15 @@ def func(arg):
     f = lambda x:x
  
     if arg == '1':
+        print "Usage: yval is filled from lambda function, cmd argument = ", arg
         yval = f(xval)
         #print yval
+        plt.plot(xval, yval)
+        plt.show()
+
     else:
-        print 'yval would be populated by a diff function'
+        print "Usage: yval would be populated by a diff function, cmd argument =",arg
 	
-    plt.plot(xval, yval)
-    plt.show()
 
 
 test = func(cmd)
