@@ -5,7 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def func(arg):
-    xval = np.arange(-5.0, 5.0, 0.1)
+    xval = np.arange(-3.0, 3.0, 0.1)
+    f = lambda x:x
  
     if arg == '1':
         f = lambda x:x
