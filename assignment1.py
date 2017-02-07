@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 
 def func(arg):
     xval = np.arange(-3.0, 3.0, 0.1)
-    f = lambda x:x
  
     if arg == '1':
     	f = lambda x:x
@@ -27,7 +26,27 @@ def func(arg):
     	f = lambda x:x**3
         yval = f(xval)
         print "Usage: yval is filled from lambda function(x**3), cmd argument = ", arg
-        yval = f(xval)
+        #print yval
+        plt.plot(xval, yval)
+        plt.show()
+
+    elif arg == '4':
+        print "Usage: yval is filled from sine function, cmd argument = ", arg
+        yval = np.sin(xval) 
+        #print yval
+        plt.plot(xval, yval)
+        plt.show()
+
+    elif arg == '5':
+        print "Usage: yval is filled from cosine function, cmd argument = ", arg
+        yval = np.cos(xval)
+        #print yval
+        plt.plot(xval, yval)
+        plt.show()
+
+    elif arg == '6':
+        print "Usage: yval is filled from tan function, cmd argument = ", arg
+        yval = np.tan(xval)
         #print yval
         plt.plot(xval, yval)
         plt.show()
