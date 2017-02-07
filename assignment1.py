@@ -10,10 +10,12 @@ def func(arg):
  
     if arg == '1':
         yval = f(xval)
-        print yval
+        #print yval
     else:
         print 'yval would be populated by a diff function'
-
+	
+    plt.plot(xval, yval)
+    plt.show()
 
 
 test = func(cmd)
